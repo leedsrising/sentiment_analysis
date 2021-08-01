@@ -1,0 +1,116 @@
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photo'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.reddit.com:443
+urllib3.connectionpool - DEBUG - https://www.reddit.com:443 "POST /api/v1/access_token HTTP/1.1" 200 121
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth.reddit.com:443
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photo'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photoshop'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photoshop'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photography'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photography'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photoshopbattles'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'photoshopbattles'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'itookapicture'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'itookapicture'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'weddingplanning'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'weddingplanning'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'AskPhotography'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 182
+prawcore - DEBUG - Response: 200 (182 bytes)
+prawcore - DEBUG - Fetching: GET https://oauth.reddit.com/comments/o3qa3v/
+prawcore - DEBUG - Data: None
+prawcore - DEBUG - Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "GET /comments/o3qa3v/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2253
+prawcore - DEBUG - Response: 200 (2253 bytes)
+root - INFO - https://www.reddit.com/r/AskPhotography/comments/o3qa3v/calling_all_photo_lovers/
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'googlephotos'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'googlephotos'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 107
+prawcore - DEBUG - Response: 200 (107 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'WeddingPhotography'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 186
+prawcore - DEBUG - Response: 200 (186 bytes)
+prawcore - DEBUG - Fetching: GET https://oauth.reddit.com/comments/o3qa4e/
+prawcore - DEBUG - Data: None
+prawcore - DEBUG - Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "GET /comments/o3qa4e/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2256
+prawcore - DEBUG - Response: 200 (2256 bytes)
+root - INFO - https://www.reddit.com/r/WeddingPhotography/comments/o3qa4e/calling_all_photo_lovers/
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'dogpictures'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'dogpictures'), ('text', 'https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link'), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 85
+prawcore - DEBUG - Response: 200 (85 bytes)
+prawcore - DEBUG - Fetching: POST https://oauth.reddit.com/api/submit/
+prawcore - DEBUG - Data: [('api_type', 'json'), ('kind', 'self'), ('nsfw', False), ('resubmit', True), ('sendreplies', True), ('spoiler', False), ('sr', 'Polaroid'), ('text', "My team and I are building an photo-sharing platform with the vision of automatically sharing and receiving photos (not every photo, just those curated) from your friends and family. I'm not sure about you guys, but I'd like to live in a world where we don't have 1000 people holding their phones up to take the same grainy video of a rock band. If that sounds interesting, I'd greatly appreciate (and will pay $100 for 30 minute conversation if you answer this survey honestly and meet our criteria) an answer to our survey here: https://docs.google.com/forms/d/e/1FAIpQLSdh6OjAQIulh7TySb70H4rzDJzoLIh7inpclieqOMIScC1nNw/viewform?usp=sf_link\n\nAlso - for all the photographers out there - whats the biggest problem with your workflow? What do you wish could be better?"), ('title', 'Calling all photo lovers'), ('validate_on_submit', True)]
+prawcore - DEBUG - Params: {'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "POST /api/submit/?raw_json=1 HTTP/1.1" 200 176
+prawcore - DEBUG - Response: 200 (176 bytes)
+prawcore - DEBUG - Fetching: GET https://oauth.reddit.com/comments/o3qa4t/
+prawcore - DEBUG - Data: None
+prawcore - DEBUG - Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+urllib3.connectionpool - DEBUG - https://oauth.reddit.com:443 "GET /comments/o3qa4t/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2247
+prawcore - DEBUG - Response: 200 (2247 bytes)
+root - INFO - https://www.reddit.com/r/Polaroid/comments/o3qa4t/calling_all_photo_lovers/
