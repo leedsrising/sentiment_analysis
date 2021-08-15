@@ -15,8 +15,8 @@ from nltk.corpus import stopwords
 
 class SentimentModel():
 
-    def __init__(self, data):
-        self.df = pd.read_csv("/Users/leedsrising/Desktop/sentiment_analysis/app_store_reviews.csv")
+    def __init__(self, reviews):
+        self.df = reviews
 
     def explore(self):
-        print(self.df.head)
+        print(self.df)

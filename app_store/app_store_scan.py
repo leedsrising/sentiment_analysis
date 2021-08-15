@@ -19,57 +19,30 @@ import time
 
 APP_NAME = "dispo-live-in-the-moment"
 APP_ID = "1491684197"
+HOW_MANY = 100
 
-## Set up App Store Scraper
-scraper = AppStoreScraper()
+def scraper():
 
-requested_app = AppStore(
-  country='us',        # required, 2-letter code
-  app_name=APP_NAME, # required, found in app's url
-  app_id=APP_ID    # technically not required, found in app's url
-)
+  ## Set up App Store Scraper
+  scraper = AppStoreScraper()
 
-## Use review method to scrape reviews from App Store
-reviews = requested_app.review()
-print(reviews)
+  requested_app = AppStore(
+    country='us',        # required, 2-letter code
+    app_name=APP_NAME, # required, found in app's url
+    app_id=APP_ID    # technically not required, found in app's url
+  )
 
-# Get start time
-# start = dt.datetime.now(tz=get_localzone())
-# fmt= "%m/%d/%y - %T %p"
+  accum = []
 
-# # Print starting output for app
-# # print('---'*20)
-# # print('---'*20)    
-# # print(f'***** {APP_NAME} started at {start.strftime(fmt)}')
-# # print()
+  while True:
 
-# # Instantiate AppStore for app
-# app_ = AppStore(country='us', app_name=APP_NAME, app_id=APP_ID)
+    ## Use review method to scrape reviews from App Store
+    requested_app.review(how_many=HOW_MANY)
 
-# # Scrape reviews posted since February 28, 2020 and limit to 10,000 reviews
-# app_.review()
+    if len(requested_app.reviews) != HOW_MANY:
+      break
 
-# # Add keys to store information about which app each review is for
-# for rvw in app_.reviews:
-#     rvw['app_name'] = APP_NAME
-#     rvw['app_id'] = APP_ID
+    for review in requested_app.reviews:
+      accum.append(review)
 
-# # Print update that scraping was completed
-# # print(f"""Done scraping {APP_NAME}. 
-# # Scraped a total of {app_.reviews_count} reviews.\n""")
-
-# # Convert list of dicts to Pandas DataFrame and write to csv
-# review_df = pd.DataFrame(reviews)
-# # review_df.to_csv('Data/' + APP_NAME + '.csv', index=False)
-# print(review_df)
-
-# Get end time
-# end = dt.datetime.now(tz=get_localzone())
-
-# Print ending output for app
-# print(f"""Successfully wrote {APP_NAME} reviews to csv
-# at {end.strftime(fmt)}.\n""")
-# print(f'Time elapsed for {APP_NAME}: {end-start}')
-# print('---'*20)
-# print('---'*20)
-# print('\n')
+  return pd.DataFrame(accum)
