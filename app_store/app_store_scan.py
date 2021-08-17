@@ -19,7 +19,7 @@ import time
 
 APP_NAME = "dispo-live-in-the-moment"
 APP_ID = "1491684197"
-HOW_MANY = 100
+HOW_MANY = 2351
 
 def scraper():
 
@@ -34,15 +34,9 @@ def scraper():
 
   accum = []
 
-  while True:
+  requested_app.review(how_many=HOW_MANY)
 
-    ## Use review method to scrape reviews from App Store
-    requested_app.review(how_many=HOW_MANY)
-
-    if len(requested_app.reviews) != HOW_MANY:
-      break
-
-    for review in requested_app.reviews:
-      accum.append(review)
+  for review in requested_app.reviews:
+    accum.append(review)
 
   return pd.DataFrame(accum)

@@ -1,49 +1,24 @@
-import csv
 from sentiment.base import SentimentModel
 from app_store.app_store_scan import scraper
 
 import pandas as pd
+import ssl
+from random import randint
 
-from utils import clean_reviews
+from pymongo import MongoClient
+# pprint library is used to make the output look more pretty
+from pprint import pprint
 
-# field names 
-fields = ['rating', 'date', 'title', 'review'] 
-    
-# name of csv file 
-filename = "app_store_reviews.csv"
+URI = 'mongodb+srv://LeedsRising:ypf4bah-TWY3acd9kcq@app-reviews-cluster.ppkin.mongodb.net/test'
+
+# connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
+client = MongoClient(URI, ssl_cert_reqs=ssl.CERT_NONE)
+
+db=client.ios_app_store_reviews
 
 reviews = scraper()
-modifiedReviews = pd.DataFrame()
+print(reviews)
 
-# writing to csv file 
-with open(filename, 'w') as csvfile: 
-    # creating a csv writer object 
-    csvwriter = csv.writer(csvfile) 
-        
-    # writing the fields 
-    csvwriter.writerow(fields)
+db.collection.insert_many(reviews.to_dict('records'))
 
-    modifiedReviews['date'] = reviews['date'].dt.strftime("%b%d%Y")
-    modifiedReviews['review'] = reviews['review'].str.replace('\n', ' ')
-    modifiedReviews['review_length'] = reviews['review'].str.len()
-    modifiedReviews['titlelength'] = reviews['title'].str.len()
-
-    for _, row in modifiedReviews.iterrows():
-        csvwriter.writerow(row)
-
-    
-
-# writing to csv file 
-with open("clean_" + filename, 'w') as csvfile: 
-    # creating a csv writer object 
-    csvwriter = csv.writer(csvfile)
-
-    cleaned_reviews = clean_reviews(modifiedReviews['review'].values)
-
-    reviews['review'] = cleaned_reviews
-
-    for _, row in reviews.iterrows():
-        csvwriter.writerow(row)
-
-sentModel = SentimentModel(modifiedReviews)
-print(sentModel.explore())
+# sentModel = SentimentModel(reviews)
