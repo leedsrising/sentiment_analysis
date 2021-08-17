@@ -1,39 +1,23 @@
-import csv
-from sentiment.base import SentimentModel
+import numpy as np
 
-import re
-import ssl
-
-import nltk
-from nltk.stem.wordnet import WordNetLemmatizer
-from nltk.corpus import stopwords
-
-def clean_reviews(reviews):
-    #create a list of stop words
-    stop_words = set(stopwords.words("english"))
-
-    add_stopwords = ["photo", "camera", "app"]
-    stop_words = stop_words.union(add_stopwords)
-
-    clean_descriptions = []
-    for review in reviews:
-        review = review.lower()
+def average_word_vectors(words, model, vocabulary, num_features):
+    
+    feature_vector = np.zeros((num_features,),dtype="float64")
+    nwords = 0.
+    
+    for word in words:
+        if word in vocabulary: 
+            nwords = nwords + 1.
+            feature_vector = np.add(feature_vector, model[word])
+    
+    if nwords:
+        feature_vector = np.divide(feature_vector, nwords)
         
-        #remove punctuation
-        review = re.sub('[^a-zA-Z]', ' ', review)
-        
-        #remove tags
-        review = re.sub("&lt;/?.*?&gt;"," &lt;&gt; ", review)
-        
-        #remove special characters and digits
-        review = re.sub("(\\d|\\W)+"," ", review)
-        
-        split_text = review.split()
-        
-        #Lemmatisation
-        lem = WordNetLemmatizer()
-        split_text = [lem.lemmatize(word) for word in split_text if not word in stop_words and len(word) >2] 
-        split_text = " ".join(split_text)
-        clean_descriptions.append(split_text)
-
-    return 
+    return feature_vector
+    
+   
+def averaged_word_vectorizer(corpus, model, num_features):
+    vocabulary = set(model.wv.index2word)
+    features = [average_word_vectors(tokenized_sentence, model, vocabulary, num_features)
+                    for tokenized_sentence in corpus]
+    return np.array(features)
