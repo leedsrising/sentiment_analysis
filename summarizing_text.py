@@ -7,25 +7,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-import os
-import ssl
-
 from utils import averaged_word_vectorizer
 
-from pymongo import MongoClient
-# pprint library is used to make the output look more pretty
-from pprint import pprint
-
-MONGO_PW = os.getenv(MONGO_PW, "")
-
-URI = 'mongodb+srv://LeedsRising:' + MONGO_PW + '@app-reviews-cluster.ppkin.mongodb.net/test'
-
 # connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
-client = MongoClient(URI, ssl_cert_reqs=ssl.CERT_NONE)
+client = MongoClient(MONGO_URI, ssl_cert_reqs=ssl.CERT_NONE)
 
 db=client.ios_app_store_reviews
 cursor = db.collection.find({})
 reviews =  pd.DataFrame(list(cursor))
+
 # tokenize sentences in corpus
 wpt = nltk.WordPunctTokenizer()
 # tokenized_corpus = [wpt.tokenize(word) for word in words.words()]
